@@ -1,0 +1,24 @@
+{
+  "name": "learning-sass",
+  "version": "1.0.0",
+  "description": "Becoming proficient with this superset of CSS",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass.cmd --output-style=nested --source-comments --source-map-contents style.scss style.css",
+    "build-watch": "node-sass.cmd -w --output-style=nested --source-comments --source-map-contents style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tzkmx/learning-sass.git"
+  },
+  "keywords": [],
+  "author": "Jesus E. Franco Martinez <jefrancomix@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tzkmx/learning-sass/issues"
+  },
+  "homepage": "https://github.com/tzkmx/learning-sass#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

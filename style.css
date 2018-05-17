@@ -1,0 +1,15 @@
+/* line 9, style.scss */
+.test-mixin-global-vars {
+  height: 1px;
+  padding: 4px; }
+
+/* line 11, style.scss */
+.test-mixin-explicit-params {
+  height: 10px;
+  padding: 20px; }
+
+/* Reference: https://www.sitepoint.com/sass-multiple-arguments-lists-or-arglist/ */
+/* line 18, style.scss */
+.test-mixin-mapped-params {
+  height: 80px;
+  padding: 40px; }

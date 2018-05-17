@@ -1,0 +1,18 @@
+@mixin global-mixin-with-defaults($untie: $global-untie, $uptie: $global-uptie) {
+  height: $untie;
+  padding: $uptie;
+}
+
+$global-untie: 1px;
+$global-uptie: 4px;
+
+.test-mixin-global-vars { @include global-mixin-with-defaults() }
+
+.test-mixin-explicit-params { @include global-mixin-with-defaults($untie: 10px, $uptie: 20px ) }
+
+$gmap: (
+  uptie: 40px,
+  untie: 80px
+);
+/* Reference: https://www.sitepoint.com/sass-multiple-arguments-lists-or-arglist/ */
+.test-mixin-mapped-params { @include global-mixin-with-defaults($gmap...) }
